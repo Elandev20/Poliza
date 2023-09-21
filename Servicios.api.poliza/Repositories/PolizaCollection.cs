@@ -28,8 +28,11 @@ namespace Servicios.api.poliza.Repositories
 
         public async Task<Poliza> GetPolizaById(string polizaId)
         {
-            return await Collection.FindAsync(
-                new BsonDocument { { "_id", new ObjectId(polizaId) } }).Result.FirstAsync();
+            var filter = Builders<Poliza>.Filter.Or(
+                Builders<Poliza>.Filter.Eq(x => x.NumeroPoliza, polizaId),
+                Builders<Poliza>.Filter.Eq(x => x.Placa, polizaId));
+           // var filter = Builders<Poliza>.Filter.Eq(x => x.NumeroPoliza, polizaId || );
+           return await Collection.FindAsync(filter).Result.FirstAsync();
         }
 
         public async Task InsertPoliza(Poliza poliza)
