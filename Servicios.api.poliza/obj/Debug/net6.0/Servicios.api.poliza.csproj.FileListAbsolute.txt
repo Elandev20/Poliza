@@ -43,3 +43,11 @@ C:\Users\Dell\Documents\Polizas\Servicios.api.poliza\obj\Debug\net6.0\refint\Ser
 C:\Users\Dell\Documents\Polizas\Servicios.api.poliza\obj\Debug\net6.0\Servicios.api.poliza.pdb
 C:\Users\Dell\Documents\Polizas\Servicios.api.poliza\obj\Debug\net6.0\Servicios.api.poliza.genruntimeconfig.cache
 C:\Users\Dell\Documents\Polizas\Servicios.api.poliza\obj\Debug\net6.0\ref\Servicios.api.poliza.dll
+C:\Users\Dell\Documents\Polizas\Servicios.api.poliza\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Dell\Documents\Polizas\Servicios.api.poliza\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Dell\Documents\Polizas\Servicios.api.poliza\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Dell\Documents\Polizas\Servicios.api.poliza\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Dell\Documents\Polizas\Servicios.api.poliza\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Dell\Documents\Polizas\Servicios.api.poliza\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Dell\Documents\Polizas\Servicios.api.poliza\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Dell\Documents\Polizas\Servicios.api.poliza\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

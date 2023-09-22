@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 using Servicios.api.poliza.Models;
 using Servicios.api.poliza.Repositories;
@@ -6,7 +7,8 @@ using Servicios.api.poliza.Repositories;
 namespace Servicios.api.poliza.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")] 
+    [Route("api/[controller]")]
+    [Authorize]
     public class PolizaController : Controller
     {
         private IPolizaCollection db = new PolizaCollection();
