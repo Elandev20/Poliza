@@ -11,9 +11,13 @@ namespace Servicios.api.poliza.Models
 
         public string NombreCliente { get; set; }
 
+        public int Identificacion { get; set; }
+
         public DateTime FechaNacimiento { get; set; }
 
         public DateTime FechaTomaPoliza { get; set; }
+
+        public DateTime FechaFinPoliza { get; set; }
 
         public string Coberturas { get; set; }
 
@@ -29,6 +33,8 @@ namespace Servicios.api.poliza.Models
 
         public string Modelo { get; set; }
 
-        public int Inspeccion { get; set; }
+        public Boolean Inspeccion { get; set; }
+
+        public Boolean Vigente { get; set; }
     }
 }

@@ -4,7 +4,7 @@ namespace Servicios.api.poliza.Repositories
 {
     public interface IPolizaCollection
     {
-        Task InsertPoliza(Poliza poliza);
+        Task<Response> InsertPoliza(Poliza poliza);
 
         Task UpdatePoliza(Poliza poliza);
 

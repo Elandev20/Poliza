@@ -38,9 +38,13 @@ namespace Servicios.api.poliza.Controllers
                 ModelState.AddModelError("NombrePoliza", "Nombre poliza is requited");
             }
 
-            await db.InsertPoliza(poliza);
+           Response response = await db.InsertPoliza(poliza);
+            if (response.Status == 200)
+            {
 
-            return Created("Created", true);
+            return Ok(response);
+            }
+            return BadRequest(response);
         }
 
         [HttpPut]
