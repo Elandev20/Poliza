@@ -31,7 +31,6 @@ namespace Servicios.api.poliza.Repositories
             var filter = Builders<Poliza>.Filter.Or(
                 Builders<Poliza>.Filter.Eq(x => x.NumeroPoliza, polizaId),
                 Builders<Poliza>.Filter.Eq(x => x.Placa, polizaId));
-           // var filter = Builders<Poliza>.Filter.Eq(x => x.NumeroPoliza, polizaId || );
            return await Collection.FindAsync(filter).Result.FirstAsync();
         }
 
